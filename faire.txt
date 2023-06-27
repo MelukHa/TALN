@@ -1,0 +1,62 @@
+que l'interaction soit pas chiante / questions VRAI/FAUX ? / questions POURQUOI ?
+ajouter des pistes d'inférences différentes (synonymes, relations entrantes/sortantes, )
+améliorer la rapidité de la réponse -> pattern matching désastreux : "être dans le cassoulet"
+ajout de toujours plus de patrons
+rajouter des schémas d'induction
+améliorer le raffinement sémantique
+ajout de nouvelles fonctionnalitées avec discord : validation (phrase que l'utilisateur a posé à valider avec tr), cachecleaner
+rajouter des contraintes aux patrons pour les cas qui marchent pas (ex : polysémie)
+
+
+
+sauvegarde des réponses si même réponse souvent -> pas forcément bien si les infos changent dans la base de connaissance
+algo pour l'explication pas forcément le même entre faux/vrai
+:rid -> peu pertinent / pertinent (annotations)
+donner une note aux relations qui va donner une piste sur les relations intéressantes
+A != B -> A syn A' et B syn B' ---> A' = B'
+A != B -> A R' C et C R'' B   + déterminer pertinence pour chaque relation
+si A r_lieu marche pas, tenter B r_has_part A ou r_lieu holo...
+
+
+
+Les mots port et ordinateur ne sont pas reliés, mais partagent les relations positives suivantes dont je ne suis pas capable d'examiner la pertinence:
+Conclusion : je n'en suis pas certain, les deux mots sont reliés mais ce n'est pas assez précis pour que je le sache
+négation pas fonctionelle sur certaines demandes
+
+
+
+jeu des 1 à n-1 termites qui rangent n copeaux de bois -> temps optimal ?
+
+rapport :
+intro
+état de l'art 
+montrer ce qu'on devait faire
+les solutions proposées
+démonstration
+conclusion qui sit comment on a bien répondu aux problèmes de l'intro
+
+
+archive des choses faites :
+1.      faire un bot discord de base
+2.      faire des requêtes à rezo-dump pour connaître les relations entre les mots
+3.      faire une première méthode de recherche simplement en fonction du poids des relations
+4.      faire des fonctions globales (get_eid ...)
+5.      faire des fonctions admins pour discord : addr/addrs, doublons
+6.      faire la mise en cache pour limiter les recherches et rendre le bot plus rapide
+7.      faire du traitement sur les caractères spéciaux et la formulation dans rezo (en:, françois 1er, groupes de mots, supprimer les relations complexes temporairement : ::avion>ailes>voler)
+8.      faire les méthodes de conclusion de déduction (r_isa) et d'induction (r_hypo/r_cohypo/r_isa à l'envers)
+9.      faire des patrons morpho-syntaxiques pour faire du pattern matching -> manque d'exemples et de spécifications mais efficace surtout pour détecter des groupes de mots
+10.     modification des méthodes de conclusion pour ne prendre en compte que les 20 relations au poids le plus grands et les 10 négatives au plus faible
+11.     recherche de si c'est vrai des x relations avec le plus de poids -> pertinence des résultats, pas chercher dans absolument tous les fichiers liés (génériques avec un nombre de dl ahurissant)
+12.     mise en file d'attente de la requête si le bot est déjà dans une requête -> si le bot a envoyé une réponse, on regarde dans la liste d'attente si y'a quelque chose et si c'est le cas on le prend en message actuel avec son contexte
+13.     faire une aide juste en tapant "aide" ou "help" ou "?" dans un channel du bot
+14.     modification pour qu'il n'y ait plus besoin de faire /inf pour demander une inférence
+15.     faire les questions style "pourquoi..." pour avoir son raisonnement
+16.     gestion des erreurs (renvoie de message d'erreur dans discord si impossible de finir (((exemple : la partie <CODE>...))))
+17.     faire pourquoi/pq -> DANS TOUS LES CAS : plusieurs chemins de réponse, si possible avec plusieurs relations différentes (exemple : 5 explications avec r_isa, r_has_part, r_lieu...)
+18.     Le bot commence à écrire lorsqu'il réfléchi à sa réponse !
+19.     gestion de la négation, que ce soit dans les phrases et dans le résultat renvoyé si poids négatif
+20.     refaire la fonction process_request pour quand la question est pas une inférence, le résultat est pas super -> plus de pattern matching ?
+21.     gestion de la polysémie
+22.     ajouter juste le fait de dire pourquoi ? après une requête sans rien pour faire en sorte que le bot regarde pourquoi sur la dernière requête
+23.     que les pistes d'indication après inférence mettent des noeuds différents

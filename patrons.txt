@@ -1,0 +1,144 @@
+[x] peut être décrit comme [y] | r_carac
+Parmi caractéristiques [x] retrouve [y] | r_carac
+[x] caractéristique typique [y] | r_carac
+peut qualifier [x] terme [y] | r_carac
+Certaines caractéristiques associées [x] incluent [y] | r_carac
+[x] caractérise [y] | r_isa r_carac
+[x] caractéristique [y] | r_carac
+[x] capable [y] | r_agent-1 r_agent
+action courante [x] [y] | r_agent-1 r_agent
+peut observer [x] train [y] | r_agent-1 r_agent
+Parmi activités [x] trouve [y] | r_agent-1 r_agent
+[x] actions typiques effectuées [y] | r_agent-1 r_agent
+[x] peut faire [y] | r_agent-1 r_agent
+[x] peut [y] | r_agent-1 r_agent
+[x] résultat [y] | r_product_of
+obtient [x] [y] | r_product_of
+fabrique [x] partir [y] | r_product_of
+[x] généré [y] | r_product_of
+produit [x] utilisant [y] | r_product_of
+[x] donne naissance [y] | r_product_of
+produit final [x] après [y] | r_product_of
+[x] engendre [y] | r_product_of
+crée [x] grâce [y] | r_product_of
+[x] formé [y] | r_product_of
+[x] synonyme [y] | r_equiv
+[x] identique [y] | r_equiv
+[x] acronyme [y] | r_equiv
+[x] sigle [y] | r_equiv
+[x] abréviation [y] | r_equiv
+utilise [x] comme équivalent [y] | r_equiv
+[x] autre terme [y] | r_equiv
+[x] peut être remplacé [y] | r_equiv
+[x] représente chose [y] | r_equiv
+[x] ressemble [y] | r_similar
+[x] a similitudes [y] | r_similar
+[x] partage caractéristiques [y] | r_similar
+[x] comparable [y] | r_similar
+[x] a apparence similaire [y] | r_similar
+peut comparer [x] [y] | r_similar
+[x] présente traits communs [y] | r_similar
+[x] genre [y] | r_similar
+[x] proche [y] nature | r_similar
+[x] souvent accompagné [y] | r_accomp
+retrouve fréquemment [x] [y] | r_accomp
+duo classique [x] [y] | r_accomp
+[x] composé plusieurs éléments dont [y] | r_holo
+locutions associées [x] [y] | r_locution
+[x] expression liée [y] | r_locution
+[x] mot composé relation [y] | r_locution
+Parmi locutions rapport [x] trouve [y] | r_locution
+[x] généralement trouvé [y] | r_lieu
+Parmi endroits où [x] peut être trouvé a [y] | r_lieu
+peut localiser [x] principalement [y] | r_lieu
+lieux courants où trouve [x] [y] | r_lieu
+[x] peut fréquemment rencontrer [y] | r_lieu
+[x] peut trouver [y] | r_lieu
+[x] peut être trouvé [y] | r_lieu
+[x] situe [y] | r_lieu
+[x] nourrit principalement [y] | r_can_eat
+régime alimentaire [x] comprend [y] | r_can_eat
+trouve [x] alimentation [y] | r_can_eat
+[x] contente nourrir [y] | r_can_eat
+sustenter [x] tourne vers [y] | r_can_eat
+source nourriture [x] [y] | r_can_eat
+survivre [x] dépend [y] | r_can_eat
+peut observer [x] nourrir [y] | r_can_eat
+principal repas [x] consiste [y] | r_can_eat
+[x] tire nutriments [y] | r_can_eat
+[x] liée [y] | r_associated
+[x] a rapport [y] | r_associated
+[x] a lien [y] | r_associated
+[x] a liens [y] | r_associated
+accompagnement typique [x] [y] | r_accomp
+[x] souvent consommé [y] | r_accomp
+apprécie [x] compagnie [y] | r_accomp
+[x] traditionnellement servi [y] | r_accomp
+[x] co hyponyme [y] | r_cohypo
+Parmi co hyponyme [x] trouve [y] | r_cohypo
+[x] exemple co hyponyme [y] | r_cohypo
+instar [x] co hyponyme [y] | r_cohypo
+peut classer [x] comme co hyponyme [y] | r_cohypo
+[x] fait partie co hyponyme [y] | r_cohypo
+[x] terme co hyponyme [y] | r_cohypo
+[x] co hyponyme [y] comme hyperonyme | r_cohypo
+peut regrouper [x] comme co hyponyme [y] | r_cohypo
+courant voir [x] [y] ensemble | r_accomp
+[x] va pair [y] | r_accomp
+associe généralement [x] [y] | r_accomp
+[x] [y] | r_isa r_associated r_has_part
+r_isa r_isa [x] a aucun lien [y] | r_associated
+[x] décrit [y] | r_isa
+[x] peut être classé comme [y] | r_isa
+[x] oppose [y] | r_anto r_anto r_cohypo r_isa
+[x] appartient catégorie [y] | r_hypo r_isa r_cohypo
+[x] relation [y] | r_associated
+[x] fait partie classe [y] | r_isa
+[x] type particulier [y] | r_hypo r_cohypo
+[x] lié [y] | r_associated
+[x] exemple [y] | r_similar r_isa
+[x] [y] opposés | r_anto
+[x] sous ensemble [y] | r_hypo r_cohypo r_isa
+[x] correspond [y] | r_isa
+[x] contraire [y] | r_anto
+[x] exemple spécifique [y] | r_hypo r_cohypo r_isa
+[x] opposé [y] | r_anto
+[x] représente [y] | r_isa
+[x] forme [y] | r_isa
+[x] inclus [y] | r_hypo r_cohypo r_isa
+[x] annule [y] | r_anto
+[x] associé [y] | r_associated
+[x] fait partie [y] | r_isa r_hypo
+[x] présente aucune association [y] | r_associated
+[x] sous partie [y] | r_hypo r_cohypo r_isa
+[x] qualifie [y] | r_isa
+[x] sous catégorie [y] | r_hypo r_cohypo r_isa
+[x] représente catégorie inférieure [y] | r_hypo r_cohypo r_isa
+[x] englobe [y] | r_isa
+[x] variante [y] | r_equiv r_hypo r_cohypo r_isa
+[x] sous type [y] | r_hypo r_cohypo r_isa
+[x] implique [y] | r_isa
+[x] trouve [y] | r_lieu r_hypo r_cohypo r_isa
+[x] identifié comme [y] | r_isa r_cohypo r_isa r_isa
+a opposition entre [x] [y] | r_anto
+[x] inclut [y] | r_isa
+[x] trouve sous classification [y] | r_hypo r_cohypo r_isa
+[x] entièrement inclus [y] | r_hypo r_cohypo r_isa
+[x] forme spécifique [y] | r_hypo r_cohypo r_isa
+[x] [y] liés | r_associated r_cohypo r_isa r_associated
+[x] sous groupe [y] | r_hypo r_cohypo r_isa
+[x] [y] antonymes | r_anto
+[x] appartient vraiment [y] | r_hypo r_cohypo r_isa
+[x] tombe sous catégorie [y] | r_isa r_cohypo r_isa
+[x] différent [y] | r_isa
+[x] contradiction [y] | r_anto
+[x] fait partie catégorie [y] | r_hypo r_cohypo r_isa
+[x] a comme parties [y] | r_has_part
+[x] composé [y] | r_has_part
+Parmi constituants [x] trouve [y] | r_has_part
+éléments composent [x] [y] | r_has_part
+[x] constitué [y] | r_holo
+[x] comprend [y] | r_holo
+Parmi tout [x] peut citer [y] | r_holo
+[x] a [y] | r_has_part
+[x] possède [y] | r_has_part
